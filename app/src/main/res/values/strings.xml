@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">android_list</string>
+    <string name="add_btn">Add</string>
+    <string name="edit_btn">Edit</string>
+    <string name="remove_btn">Remove</string>
+    <string name="second_activity">2 Activity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="simple_greeting">Hellow World!</string>
+</resources>
