@@ -25,6 +25,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".SportsPlace"></activity>
+        <activity android:name=".SingleMenuItemActivity"></activity>
+        <activity android:name=".PropertiesInformation"></activity>
+
     </application>
 
 </manifest>
