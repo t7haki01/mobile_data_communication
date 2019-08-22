@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:id="@+id/sports_main_view"
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/sports_main_view"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="@drawable/background">
     <ProgressBar
         android:id="@+id/progress_bar_sports_view"
         android:visibility="gone"
@@ -13,8 +15,23 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+        android:text="@string/description_sprots_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/sports_list_view"
+        android:id="@+id/sports_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="@dimen/basic_margin_set"
+        android:layout_marginRight="@dimen/basic_margin_set"
+        android:layout_marginTop="@dimen/basic_margin_set"
+        android:layout_marginLeft="@dimen/basic_margin_set"
+        />
     <ListView
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/sports_text"
         android:id="@+id/sports_list_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
+        android:layout_height="wrap_content"></ListView>
 </android.support.constraint.ConstraintLayout>

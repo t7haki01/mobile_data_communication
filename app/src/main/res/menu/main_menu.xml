@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+     <item
+        android:title="Home"
+         android:id="@+id/option_home">
+     </item>
+    <item
+        android:title="Oulu Sports Place Info"
+        android:id="@+id/option_sports_place">
+    </item>
+    <item
+        android:title="Oulu Properties Info"
+        android:id="@+id/option_properties">
+    </item>
+    <item
+        android:title="Oulu Symphony Orchestra Info"
+        android:id="@+id/option_symphony">
+    </item>
+    <item
+        android:title="Oulu Council Meeting Info"
+        android:id="@+id/option_council_meeting">
+    </item>
+</menu>

@@ -17,23 +17,22 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 
-
 import org.json.JSONArray;
 import org.json.JSONException;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class PropertiesInformation extends MainActivity {
+public class CouncilInformation extends MainActivity {
     private ListView listView;
 
     private ArrayAdapter<ArrayList> arrayAdapter;
 
     private ArrayList arrayList;
 
-    private List<PropertiesObjectHandler> list;
+    private List<CouncilObjectHandler> list;
 
-    private String URL = "https://api.ouka.fi/v1/properties_basic_information";
+    private String URL = "https://api.ouka.fi/v1/city_council_meetings";
 
     ProgressBar progressBar;
 
@@ -42,14 +41,14 @@ public class PropertiesInformation extends MainActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.properties_view);
-        constraintLayout = findViewById(R.id.properties_main_view);
-        progressBar = findViewById(R.id.progress_bar_properties_view);
+        setContentView(R.layout.council_view);
+        constraintLayout = findViewById(R.id.council_main_view);
+        progressBar = findViewById(R.id.progress_bar_council_view);
         progressBar.setVisibility(View.VISIBLE);
 
-        listView = findViewById(R.id.properties_list_view);
+        listView = findViewById(R.id.council_list_view);
         arrayList = new ArrayList();
-        list = new ArrayList<PropertiesObjectHandler>();
+        list = new ArrayList<CouncilObjectHandler>();
         getAPI(URL);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -57,9 +56,9 @@ public class PropertiesInformation extends MainActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 String title = arrayList.get(position)+"";
-                PropertiesObjectHandler pickedOne = list.get(position);
+                CouncilObjectHandler pickedOne = list.get(position);
 
-                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(PropertiesInformation.this);
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(CouncilInformation.this);
                 alertDialogBuilder.setTitle(title);
                 alertDialogBuilder.setMessage(pickedOne.getText());
                 alertDialogBuilder.setPositiveButton("OK", null);
@@ -78,10 +77,10 @@ public class PropertiesInformation extends MainActivity {
                         try{
                             JSONArray jsonArray = response;
 
-                            for(int i = 0; i<jsonArray.length(); i++){
-                                PropertiesObjectHandler propertiesObjectHandler = new PropertiesObjectHandler(jsonArray.getJSONObject(i));
-                                list.add(propertiesObjectHandler);
-                                String name = response.getJSONObject(i).getString("property_name");
+                            for(int i = 0 ; i<jsonArray.length(); i++){
+                                CouncilObjectHandler councilObjectHandler = new CouncilObjectHandler(jsonArray.getJSONObject(i));
+                                list.add(councilObjectHandler);
+                                String name = response.getJSONObject(i).getString("mname");
                                 arrayList.add(name);
                                 arrayAdapter = new ArrayAdapter<ArrayList>(getApplicationContext(), android.R.layout.simple_list_item_1, arrayList);
                                 listView.setAdapter(arrayAdapter);

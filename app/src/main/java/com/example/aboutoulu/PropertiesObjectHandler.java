@@ -1,9 +1,8 @@
 package com.example.aboutoulu;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
-public class PropertiesObjectHandler {
+public class PropertiesObjectHandler extends SportsPlaceObjectHandler {
     private JSONObject jsonObject = null;
     private String property_name = null;
     private String intended_use = null;
@@ -43,19 +42,12 @@ public class PropertiesObjectHandler {
 
     }
 
-    private String getValue(JSONObject jsonObject, String key){
-        String value = null;
-        try{
-            value = jsonObject.getString(key);
-        }
-        catch(JSONException e){
-            e.printStackTrace();
-        }
-        return value;
+    public String getValue(JSONObject jsonObject, String key){
+        return super.getValue(jsonObject, key);
     }
 
     public String getText(){
-        String text = "*Oulu City Properties Information*" + "\n";
+        String text = "";
 
         String name = this.property_name!=null?this.property_name:"unknown";
         text = text + "Name: " + name + "\n";

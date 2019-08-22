@@ -59,6 +59,7 @@ public class SportsPlaceObjectHandler {
     private String cosmicBowling = null;
     private String bowlingLanesCount = null;
 
+    public SportsPlaceObjectHandler(){}
 
     public SportsPlaceObjectHandler(JSONObject jsonObject){
         this.jsonObject = jsonObject;
@@ -148,7 +149,7 @@ public class SportsPlaceObjectHandler {
 
     }
 
-    private String getValue(JSONObject jsonObject, String key){
+    public String getValue(JSONObject jsonObject, String key){
         String value = null;
         try{
             value = jsonObject.getString(key);
@@ -159,7 +160,7 @@ public class SportsPlaceObjectHandler {
         return value;
     }
 
-    private JSONObject getJsonObject(JSONObject jsonObject, String key){
+    public JSONObject getJsonObject(JSONObject jsonObject, String key){
 
         JSONObject resultJsonObject = null;
 
@@ -173,7 +174,7 @@ public class SportsPlaceObjectHandler {
         return resultJsonObject;
     }
 
-    private JSONObject getJsonArray(JSONObject jsonObject, String key, int i){
+    public JSONObject getJsonArray(JSONObject jsonObject, String key, int i){
         JSONObject resultJsonObject = null;
 
         try{
@@ -186,7 +187,7 @@ public class SportsPlaceObjectHandler {
         return resultJsonObject;
     }
 
-    private Double getJsonArrayValue(JSONObject jsonObject, String key, int i){
+    public Double getJsonArrayValue(JSONObject jsonObject, String key, int i){
         Double result = null;
 
         try{

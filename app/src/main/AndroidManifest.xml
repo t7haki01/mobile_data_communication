@@ -10,11 +10,11 @@
     <application
         android:networkSecurityConfig="@xml/network_security_config"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/OuluTheme">
 
         <uses-library android:name="org.apache.http.legacy" android:required="false" />
 
@@ -26,9 +26,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SportsPlace"></activity>
-        <activity android:name=".SingleMenuItemActivity"></activity>
+        <activity android:name=".SportsPlaceInformation"></activity>
         <activity android:name=".PropertiesInformation"></activity>
+        <activity android:name=".SymphonyInformation"></activity>
+        <activity android:name=".CouncilInformation"></activity>
 
     </application>
 

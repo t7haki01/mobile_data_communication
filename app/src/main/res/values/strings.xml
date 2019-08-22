@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">AboutOulu</string>
+    <string name="description_sprots_place">
+    Here is the list contains the information of Sports places in Oulu, provided by University of Jyväskylä (https://www.lipas.fi/) open data
+    </string>
+
+    <string name="description_properties">
+    Here is the list contains the information of Oulu City Properties Basic information, provided by Oulu open data(https://www.ouka.fi/avoindata)
+    </string>
+
+    <string name="description_symphony">
+    Here is the list contains the information of Oulu city Symphony Orchestra, provided by Oulu open data(https://www.ouka.fi/avoindata)
+    </string>
+
+    <string name="description_council_meeting">
+    Here is the list contains the information of Oulu city council meeting, provided by Oulu open data(https://www.ouka.fi/avoindata)
+    </string>
 </resources>
