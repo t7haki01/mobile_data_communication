@@ -1,0 +1,17 @@
+
+AboutOulu, Kihun Han,
+Mobile Data Communications Project Development Backlog
+
+
+As a user, i can browse available Oulu sports places list
+As a user, i can get the selected sports place information detail
+As a user, i can browse available Oulu properties basic information list
+As a user, i can get the selected properties basic information detail
+As a user, i can browse available Oulu symphony orchestra information list
+As a user, i can get the selected symphony orchestra information detail
+As a user, i can browse available Oulu council meeting information list
+As a user, i can get the selected council meeting information detail
+As a user, i can navigate to other section in every section
+As a user, i can see the information about application
+As a user, i can get the application's reaction corresponding to my choice
+
