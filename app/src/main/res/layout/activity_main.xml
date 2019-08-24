@@ -19,28 +19,64 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:layout_marginRight="20dp"
-            android:text="Oulu City Sports Place Information"
-            android:id="@+id/btn1"
+            android:background="@color/redish5"
+            android:text="@string/btn_about"
+            android:layout_marginBottom="@dimen/basic_margin_set"
+            android:paddingRight="@dimen/basic_padding_set"
+            android:paddingLeft="@dimen/basic_padding_set"
+            android:layout_marginLeft="@dimen/basic_margin_set"
+            android:layout_marginRight="@dimen/basic_margin_set"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_about"
+            >
+
+        </Button>
+
+        <Button
+            android:layout_marginBottom="@dimen/basic_margin_set"
+            android:text="@string/btn_sprots_place"
+            android:id="@+id/btn_sports_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/redish4"
+            android:paddingRight="@dimen/basic_padding_set"
+            android:paddingLeft="@dimen/basic_padding_set"
+            android:layout_marginLeft="@dimen/basic_margin_set"
+            android:layout_marginRight="@dimen/basic_margin_set"/>
+
+        <Button
+            android:layout_marginBottom="@dimen/basic_margin_set"
+            android:background="@color/redish3"
+            android:paddingRight="@dimen/basic_padding_set"
+            android:paddingLeft="@dimen/basic_padding_set"
+            android:layout_marginLeft="@dimen/basic_margin_set"
+            android:layout_marginRight="@dimen/basic_margin_set"
+            android:text="@string/btn_properties"
+            android:id="@+id/btn_properties"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <Button
-            android:layout_marginRight="20dp"
-            android:text="Oulu City Properties Basic Information"
-            android:id="@+id/btn2"
+            android:layout_marginBottom="@dimen/basic_margin_set"
+            android:background="@color/redish2"
+            android:paddingRight="@dimen/basic_padding_set"
+            android:paddingLeft="@dimen/basic_padding_set"
+            android:layout_marginLeft="@dimen/basic_margin_set"
+            android:layout_marginRight="@dimen/basic_margin_set"
+            android:text="@string/btn_symphony_orchestra"
+            android:id="@+id/btn_symphony"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <Button
-            android:text="Oulu City Symphony Orchestra Information"
-            android:id="@+id/btn3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:text="Oulu City Council Meeting Information"
-            android:id="@+id/btn4"
+            android:background="@color/redish1"
+            android:paddingRight="@dimen/basic_padding_set"
+            android:paddingLeft="@dimen/basic_padding_set"
+            android:layout_marginLeft="@dimen/basic_margin_set"
+            android:layout_marginRight="@dimen/basic_margin_set"
+            android:text="@string/btn_council_meeting"
+            android:id="@+id/btn_council_meeting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>

@@ -1,6 +1,5 @@
 package com.example.aboutoulu;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -43,6 +42,8 @@ public class PropertiesInformation extends MainActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.properties_view);
+
+        setTitle(getResources().getString(R.string.btn_properties));
         constraintLayout = findViewById(R.id.properties_main_view);
         progressBar = findViewById(R.id.progress_bar_properties_view);
         progressBar.setVisibility(View.VISIBLE);

@@ -1,20 +1,17 @@
 package com.example.aboutoulu;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
+
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
-import android.widget.Toolbar;
+
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -49,6 +46,7 @@ public class SportsPlaceInformation extends MainActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sports_view);
+        setTitle(getResources().getString(R.string.btn_sprots_place));
         constraintLayout = findViewById(R.id.sports_main_view);
         progressBar = findViewById(R.id.progress_bar_sports_view);
         progressBar.setVisibility(View.VISIBLE);
@@ -57,38 +55,6 @@ public class SportsPlaceInformation extends MainActivity {
         arrayList = new ArrayList();
         list = new ArrayList<SportsPlaceObjectHandler>();
         getAPI(URL);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.main_menu, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId() == R.id.option_home){
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
-        }
-        if(item.getItemId() == R.id.option_sports_place){
-            Intent intent = new Intent(this, SportsPlaceInformation.class);
-            startActivity(intent);
-        }
-        if(item.getItemId() == R.id.option_properties){
-            Intent intent = new Intent(this, PropertiesInformation.class);
-            startActivity(intent);
-        }
-        if(item.getItemId() == R.id.option_symphony){
-            Intent intent = new Intent(this, SymphonyInformation.class);
-            startActivity(intent);
-        }
-        if(item.getItemId() == R.id.option_council_meeting){
-            Intent intent = new Intent(this, CouncilInformation.class);
-            startActivity(intent);
-        }
-        return true;
     }
 
     private void getAPI(String url){

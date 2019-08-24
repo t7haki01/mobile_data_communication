@@ -42,6 +42,7 @@ public class CouncilInformation extends MainActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.council_view);
+        setTitle(getResources().getString(R.string.btn_council_meeting));
         constraintLayout = findViewById(R.id.council_main_view);
         progressBar = findViewById(R.id.progress_bar_council_view);
         progressBar.setVisibility(View.VISIBLE);

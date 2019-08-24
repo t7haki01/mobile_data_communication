@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">AboutOulu</string>
+    <string name="btn_about">AboutOulu</string>
+    <string name="btn_sprots_place">Oulu City Sports Place Information</string>
+    <string name="btn_symphony_orchestra">Oulu City Symphony Orchestra Information</string>
+    <string name="btn_properties">Oulu City Properties Basic Information</string>
+    <string name="btn_council_meeting">Oulu City Council Meeting Information</string>
     <string name="description_sprots_place">
     Here is the list contains the information of Sports places in Oulu, provided by University of Jyväskylä (https://www.lipas.fi/) open data
     </string>
@@ -14,5 +19,14 @@
 
     <string name="description_council_meeting">
     Here is the list contains the information of Oulu city council meeting, provided by Oulu open data(https://www.ouka.fi/avoindata)
+    </string>
+
+    <string name="description_about_oulu">
+    This application is for the course  \"T742803 Mobile Data Communications\"  during the summer, 2019
+    which that uses some telecommunication standard for the communication outside the phone
+        (In this application case, communication with Open data API from University of Jyväskylä and Oulu City)
+        From This application, User can find information about open data about Oulu city
+        (Oulu council meeting information, Basic information of Oulu city properties,
+        Information of Oulu Symphony Orchestra and Oulu Sports place(public/private).
     </string>
 </resources>

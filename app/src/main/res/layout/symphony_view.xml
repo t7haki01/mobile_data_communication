@@ -3,7 +3,21 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background">
+    <TextView
+        android:text="@string/description_symphony"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/symphony_list_view"
+        android:id="@+id/symphony_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="@dimen/basic_margin_set"
+        android:layout_marginTop="@dimen/basic_margin_set"
+        android:paddingLeft="@dimen/basic_padding_set"
+        android:paddingRight="@dimen/basic_padding_set"
+        />
     <ProgressBar
         android:id="@+id/progress_bar_symphony_view"
         android:visibility="gone"
@@ -14,7 +28,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
     <ListView
+        app:layout_constraintTop_toBottomOf="@+id/symphony_text"
         android:id="@+id/symphony_list_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
+        android:layout_height="wrap_content"></ListView>
 </android.support.constraint.ConstraintLayout>

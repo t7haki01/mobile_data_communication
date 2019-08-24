@@ -1,6 +1,6 @@
 package com.example.aboutoulu;
 
-import android.app.Activity;
+
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,15 +16,13 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.JsonObjectRequest;
 
 
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
+
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class SymphonyInformation extends MainActivity {
@@ -46,6 +44,7 @@ public class SymphonyInformation extends MainActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.symphony_view);
+        setTitle(getResources().getString(R.string.btn_symphony_orchestra));
         constraintLayout = findViewById(R.id.sports_main_view);
         progressBar = findViewById(R.id.progress_bar_symphony_view);
         progressBar.setVisibility(View.VISIBLE);

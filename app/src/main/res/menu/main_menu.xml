@@ -2,7 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
      <item
         android:title="Home"
-         android:id="@+id/option_home">
+        android:id="@+id/option_home"
+         >
      </item>
     <item
         android:title="Oulu Sports Place Info"

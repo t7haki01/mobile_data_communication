@@ -24,9 +24,9 @@
         android:id="@+id/sports_text"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginBottom="@dimen/basic_margin_set"
-        android:layout_marginRight="@dimen/basic_margin_set"
         android:layout_marginTop="@dimen/basic_margin_set"
-        android:layout_marginLeft="@dimen/basic_margin_set"
+        android:paddingLeft="@dimen/basic_padding_set"
+        android:paddingRight="@dimen/basic_padding_set"
         />
     <ListView
         android:layout_marginTop="20dp"
